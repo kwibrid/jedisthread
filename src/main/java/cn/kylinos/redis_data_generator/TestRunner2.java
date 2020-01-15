@@ -4,7 +4,7 @@ import static java.lang.Thread.sleep;
 
 public class TestRunner2 {
     public static void main(String[] args) throws InterruptedException {
-        //JsonRunner
+        //JsonRunner and HmsetRunnable
         while (true) {
             Thread t1 = new Thread(new JsonRunnable());
             sleep(100);
@@ -13,9 +13,6 @@ public class TestRunner2 {
             sleep(100);
             t2.start();
         }
-
-        //HmsetRunner
-
 
     }
 
